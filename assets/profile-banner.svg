@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320" role="img" aria-labelledby="title">
+  <title id="title">Brushed silver M monogram on a graphite background</title>
+  <defs>
+    <linearGradient id="graphite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop stop-color="#171b22"/>
+      <stop offset=".49" stop-color="#0b0e13"/>
+      <stop offset="1" stop-color="#07090d"/>
+    </linearGradient>
+    <radialGradient id="ambient" cx="50%" cy="41%" r="57%">
+      <stop stop-color="#556070" stop-opacity=".29"/>
+      <stop offset="1" stop-color="#314052" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="graphite-grain" width="1" height="4" patternUnits="userSpaceOnUse">
+      <path d="M0 .5H1" stroke="#c7d1e2" stroke-opacity=".018"/>
+    </pattern>
+    <pattern id="metal-grain" width="1" height="3" patternUnits="userSpaceOnUse">
+      <path d="M0 .5H1" stroke="#fff" stroke-opacity=".08"/>
+      <path d="M0 1.5H1" stroke="#1b2330" stroke-opacity=".06"/>
+    </pattern>
+    <linearGradient id="silver-left" x1="32" y1="36" x2="84" y2="98" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8892a1"/>
+      <stop offset=".17" stop-color="#f5f8fb"/>
+      <stop offset=".34" stop-color="#d6dce3"/>
+      <stop offset=".69" stop-color="#929caa"/>
+      <stop offset=".92" stop-color="#6d7888"/>
+      <stop offset="1" stop-color="#abb6c4"/>
+    </linearGradient>
+    <linearGradient id="silver-right" x1="146" y1="43" x2="211" y2="109" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a5afbc"/>
+      <stop offset=".24" stop-color="#f4f7fa"/>
+      <stop offset=".42" stop-color="#c2cbd6"/>
+      <stop offset=".71" stop-color="#7e8999"/>
+      <stop offset=".91" stop-color="#616c7b"/>
+      <stop offset="1" stop-color="#a1acba"/>
+    </linearGradient>
+    <linearGradient id="fold-left" x1="90" y1="79" x2="125" y2="135" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#414a57"/>
+      <stop offset=".55" stop-color="#697483"/>
+      <stop offset="1" stop-color="#aeb8c5"/>
+    </linearGradient>
+    <linearGradient id="fold-right" x1="200" y1="84" x2="248" y2="158" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#657181"/>
+      <stop offset=".45" stop-color="#424c5a"/>
+      <stop offset=".82" stop-color="#758191"/>
+      <stop offset="1" stop-color="#a3afbf"/>
+    </linearGradient>
+    <path id="front-left" d="M0 80 82 0h40v40L0 158Z"/>
+    <path id="front-right" d="M84 133 216 0h42v40L134 158H84Z"/>
+  </defs>
+
+  <rect width="1280" height="320" rx="20" fill="url(#graphite)"/>
+  <rect width="1280" height="320" rx="20" fill="url(#ambient)"/>
+  <rect width="1280" height="320" rx="20" fill="url(#graphite-grain)"/>
+  <rect x=".75" y=".75" width="1278.5" height="318.5" rx="19.25" fill="none" stroke="#7c899d" stroke-opacity=".36" stroke-width="1.5"/>
+
+  <g transform="translate(511 81)" stroke-linejoin="round">
+    <path d="M84 77 122 40v118H84Z" fill="url(#fold-left)" stroke="#aeb8c8" stroke-opacity=".56"/>
+    <path d="M202 94 258 40v118h-56Z" fill="url(#fold-right)" stroke="#c8d3e1" stroke-opacity=".68"/>
+    <use href="#front-left" fill="url(#silver-left)" stroke="#d4dee9" stroke-opacity=".7" stroke-width="1.2"/>
+    <use href="#front-right" fill="url(#silver-right)" stroke="#d4dee9" stroke-opacity=".7" stroke-width="1.2"/>
+    <use href="#front-left" fill="url(#metal-grain)"/>
+    <use href="#front-right" fill="url(#metal-grain)"/>
+    <path d="M1 80 82 1h39M85 132 216 1h41" fill="none" stroke="#f9fcff" stroke-opacity=".67" stroke-width="1.4"/>
+  </g>
+</svg>
