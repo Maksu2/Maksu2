@@ -1,32 +1,37 @@
-<p align="center">
-  <img src="./assets/profile-banner.svg" alt="Brushed silver M monogram on a graphite background" width="100%">
-</p>
-
-<h1 align="center">Maksymilian Puta</h1>
-
-<p align="center">
-  Software · Intelligence · Engineering<br>
-  <a href="https://mksp.dev/">mksp.dev</a>
+<p>
+  <a href="https://mksp.dev/">
+    <picture>
+      <source media="(max-width: 680px), (min-width: 768px) and (max-width: 1020px)" srcset="./assets/profile-mobile.webp">
+      <img src="./assets/profile.webp" width="100%" alt="Maksymilian Puta. Software, intelligence and engineering. Visit mksp.dev.">
+    </picture>
+  </a>
 </p>
 
 ## Selected projects
 
-<h3><a href="https://github.com/Maksu2/glyph"><img src="./assets/glyph-mark.svg" alt="" width="24" height="24" align="middle"> Glyph</a></h3>
+<h3>
+  <a href="https://github.com/Maksu2/glyph">
+    <picture>
+      <source media="(max-width: 680px), (min-width: 768px) and (max-width: 1020px)" srcset="./assets/glyph-mobile.webp">
+      <img src="./assets/glyph.webp" width="100%" alt="Glyph — Polish language models in PyTorch. The tokenizer entry ▁język has ID 7359.">
+    </picture>
+  </a>
+</h3>
 
-Small Polish language models trained from scratch on a single home GPU. The project covers Transformer architecture, dataset curation, training, and evaluation.
+I trained **Glyph-27M** from scratch for 200,000 steps on an 8 GB Radeon RX 5500 XT. [Model&nbsp;card&nbsp;→](https://github.com/Maksu2/glyph/blob/master/MODEL_CARD.md)
 
-Python · PyTorch · Machine learning
+<h3>
+  <a href="https://github.com/Maksu2/GemOS">
+    <picture>
+      <source media="(max-width: 680px), (min-width: 768px) and (max-width: 1020px)" srcset="./assets/gemos-mobile.webp">
+      <img src="./assets/gemos.webp" width="100%" alt="GemOS — a 32-bit x86 operating system in C and assembly. Its terminal is running the help command.">
+    </picture>
+  </a>
+</h3>
 
-### [GemOS](https://github.com/Maksu2/GemOS)
-
-A 32-bit x86 operating system built from scratch, with its own bootloader, kernel, graphical desktop, and user-space apps.
-
-C · Assembly · Operating systems
-
-## Areas of interest
-
-Artificial intelligence · Low-level systems · Embedded electronics · Robotics &amp; automation
+I wrote **GemOS** from the bootloader to the desktop. Its text editor runs in user space and saves files to GemFS. [Architecture&nbsp;→](https://github.com/Maksu2/GemOS#current-architecture)
 
 ---
 
-<p align="center"><em>Exploring how things work. Building what comes next.</em></p>
+**Areas of interest**  
+Artificial intelligence · Low-level systems · Embedded electronics · Robotics and automation
