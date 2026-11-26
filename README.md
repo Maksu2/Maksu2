@@ -12,24 +12,28 @@
 <h3>
   <a href="https://github.com/Maksu2/glyph">
     <picture>
-      <source media="(max-width: 680px), (min-width: 768px) and (max-width: 1020px)" srcset="./assets/glyph-mobile.webp">
-      <img src="./assets/glyph.webp" width="100%" alt="Glyph — Polish language models in PyTorch. The tokenizer entry ▁język has ID 7359.">
+      <source media="(max-width: 680px), (min-width: 768px) and (max-width: 1020px)" srcset="./assets/glyph-3-mobile.webp">
+      <img src="./assets/glyph-3.webp" width="100%" alt="Glyph 3, a Polish language model with 98 million parameters and 12 decoder layers.">
     </picture>
   </a>
 </h3>
 
-I trained **Glyph-27M** from scratch for 200,000 steps on an 8 GB Radeon RX 5500 XT. [Model&nbsp;card&nbsp;→](https://github.com/Maksu2/glyph/blob/master/MODEL_CARD.md)
+I wrote the Transformer in PyTorch and tuned the training loop to fit an 8 GB Radeon. **Glyph 3** processed 1.76 billion tokens of Polish text during pretraining. I then fine-tuned it to answer short questions. The public chat runs on a CPU in my homelab.
+
+[Try&nbsp;Glyph&nbsp;3&nbsp;→](https://glyph.maksu.online/chat) &nbsp;·&nbsp; [Training&nbsp;notes](https://glyph.maksu.online/#trening)
 
 <h3>
   <a href="https://github.com/Maksu2/GemOS">
     <picture>
-      <source media="(max-width: 680px), (min-width: 768px) and (max-width: 1020px)" srcset="./assets/gemos-mobile.webp">
-      <img src="./assets/gemos.webp" width="100%" alt="GemOS — a 32-bit x86 operating system in C and assembly. Its terminal is running the help command.">
+      <source media="(max-width: 680px), (min-width: 768px) and (max-width: 1020px)" srcset="./assets/gemos-desktop-mobile.webp">
+      <img src="./assets/gemos-desktop.webp" width="100%" alt="GemOS, a 32-bit x86 desktop OS in C and assembly. Its terminal and File Explorer are open side by side.">
     </picture>
   </a>
 </h3>
 
-I wrote **GemOS** from the bootloader to the desktop. Its text editor runs in user space and saves files to GemFS. [Architecture&nbsp;→](https://github.com/Maksu2/GemOS#current-architecture)
+My two-stage bootloader starts the **GemOS** kernel, which brings up the desktop and runs applications in separate address spaces. I built GemFS to give those applications persistent storage. With a disk attached, you can save a document in the editor, reboot, and reopen it from File Explorer.
+
+[Boot&nbsp;GemOS&nbsp;→](https://gemos.maksu.online/preview/) &nbsp;·&nbsp; [Screenshot](https://github.com/Maksu2/Maksu2/blob/main/assets/gemos-screen.png) &nbsp;·&nbsp; [Architecture](https://github.com/Maksu2/GemOS#current-architecture)
 
 ---
 
